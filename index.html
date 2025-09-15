@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="br">
+   <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Web – Criação de sites para empresas</title>
+
+    <link rel="icon" type="image/png" href="Imagem do WhatsApp de 2025-09-14 à(s) 18.56.18_893eeec5.jpg">
+    
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head >
+<body id="body">
+
+
+  <!-- Bouton centré -->
+  <button class="menu-btn" id="menuBtn">Menu</button>
+
+  <!-- Menu -->
+  <div class="menu" id="menu">
+    <a href="index.html">INICIO</a>
+    <a href="#text-2">SOBRE-NOS</a>
+    <a href="#serviço">SERVIÇO</a>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+    const links = menu.querySelectorAll("a");
+
+    // ouvrir / fermer au clic
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    // fermer après clic sur un lien
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    });
+  </script>
+
+<script src="code.js"></script>
+  <section id="accueil">
+
+   <div class="conteneur-1">
+    <h1>Eleve  sua  <br>presença na <br>  web a patamares  </h1>
+</div>
+      <div class="hero-sub">incomparáveis.</div>
+
+  </div >
+    <p class="intro">Inscreva-se na lista de espera para criar um site com design incomparável e sob medida.</p>
+  </div>
+
+    <div class="container-boutons" >
+      <a href="formulaire.html" ><button type="button" class="btn">Agendar uma chamada </button></a>
+      <a href="https://wa.me/message/67SOIC5CODHVA1" ><button class="btn-noir">Discutir Projeto</button></a>
+    </div>
+</section>
+</section >
+<section class="page2">
+ <div id="text-2">  <h2>sobre-nos</h2></div>
+<div class="apropo">Nós concebemos soluções Web2 de alto desempenho, especializadas em páginas de apresentação, plataformas de e-commerce transparentes e sistemas totalmente integrados que estimulam o engajamento dos usuários e o crescimento da empresa.</div>
+
+
+  
+ 
+
+<section id="serviço">
+  
+  </div>
+  <div class="text">
+  <h2>serviço</h2>
+</div>
+
+  <div class="card">
+    <h2>D&D</h2>
+    <p>
+      Design & Desenvolvimento Web <br>
+      Criamos sites modernos, rápidos e adaptados às suas necessidades. 
+      Cada projeto é pensado para ser único, profissional e capaz de atrair mais clientes.
+    </p>
+  </div>
+
+  <div class="card-1">
+    <h2>iOS <br>App</h2>
+    <p>
+      Compatibilidade Mobile & iOS/Android <br>
+      Sites e aplicativos otimizados para todas as telas, 
+      com uma experiência perfeita em smartphones e computadores.
+    </p>
+  </div>
+
+  <div class="card card-3" onclick="this.classList.toggle('open')">
+    <h2>UI UX</h2>
+    <p>
+      UI/UX Experiência Visual <br>
+      Um design minimalista, elegante e intuitivo que valoriza a sua marca. 
+      Unimos estética e performance para oferecer uma navegação fluida e marcante.
+    </p>
+  </div>
+</section>
+
+</section>
+ 
+<section class="footer">
+  <div class="social">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+ 
+ 
+</section>
+
+
+</section>
+
+</body>
+</html>

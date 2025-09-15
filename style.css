@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+ body {
+ font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+ margin: 20px ;
+ padding: 20px ;
+ background-color: #f5f5f5;
+ height: 100%;
+ }
+
+nav {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  position: relative;
+ 
+  padding: 10px;
+  flex-wrap: wrap;  
+}
+
+
+nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+
+nav .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav .nav-links a:hover {
+  background-color: #555;
+}
+
+
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1001;
+  margin-left: 10px;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between; 
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+  }
+
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px; 
+    right: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 8px 0;
+    width: 180px;
+
+  }
+
+  nav .nav-links.active {
+    display: flex;
+  }
+
+  nav .nav-links a {
+    padding: 10px 20px;
+  }
+}
+
+
+#accueil{
+  min-height: 78vh;
+  text-align: center;
+  justify-content: center;
+  margin-top: 150px; 
+  
+ 
+}
+     .conteneur-1 h1 {
+    font-size: clamp(46px, 10.6vw, 78px);
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    line-height: 0.95;
+    max-width: 920px; 
+    margin: 8px auto 6px auto; /* auto pour centrer horizontalement */
+    text-align: center;
+}    
+
+.hero-sub{
+      font-family: "Playfair Display", Georgia, serif;
+      font-style: italic;
+      font-weight:400;
+      font-size: clamp(32px, 7.2vw, 42px);
+      color:var(--black);
+      margin-top:8px;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .intro {
+      font-size: 13px;
+      font-weight: 500;
+    }
+.container-boutons {
+  display: flex;
+  gap: 15px; 
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 140px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;  
+  color: #000000;            
+  border: 2px solid #000000;  
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: #ccc;  
+  color: #000000;            
+}
+
+
+.btn-noir {
+  display: flex;
+  box-shadow: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  min-width: 140px;
+  text-decoration: none;
+  background-color: #000000;  
+  color: #ffffff;            
+  border: 2px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.btn, .btn-noir {
+  white-space: nowrap;
+  display: inline-block; 
+  padding: 12px 8px;    
+  font-size: 15px;       
+  text-align: center;   
+}
+.btn-noir:hover {
+  background-color: #ffffff;  
+  color: #000000;            
+}
+
+
+ 
+
+
+
+.apropo{
+    text-align: center;
+    margin: 1px 5px 40px;
+    font-weight: 400;
+  
+}
+
+
+
+.card{
+
+ background-color: linear-gradient(rgba(0,0,0,0.8) rgba(0,0,0,0.9));
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    display: flexbox;
+    padding: 30px ;
+    border-radius: 10px;
+    font-size: 16px;
+   
+}
+.card p{
+    color: #dddddd;
+    font-weight: 500;
+    font-size: 13px;
+
+
+}
+.card h2{
+    color: #555;
+    font-size: 30px;
+}
+.card-1 h2{
+    color: #555;
+}
+.card-1{
+     background-color: linear-gradient(rgba(0,0,0,0.8) rgba(0,0,0,0.9));
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flexbox;
+    padding: 10px ;
+    border-radius: 10px;
+    margin: 5px  auto ;
+    font-size: 16px;
+}
+
+
+.text{
+    text-align: center;
+}
+#text-2{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+}
+
+.contact p{
+    font-size: 20px;
+}
+
+.bouton{
+    padding:  8px;
+    color: white;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.reseau{
+    text-align: center;
+}
+
+
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #111;
+}
+
+
+.contact-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  background: transparent;
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+.contact-form button:hover {
+  background: #333;
+}
+
+
+.contact-form .note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #111;
+}
+
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+
+form button {
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #333;
+}
+
+
+form p {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+
+
+
+    /* Bouton Menu */
+    .menu-btn {
+      background: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 20px auto; /* auto pour centrer */
+      display: block;
+    }
+
+    /* Menu déroulant */
+    .menu {
+      display: none;
+      flex-direction: column;
+      background: #000000;
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px;
+      margin: 30px;
+      border-radius: 10px;
+      z-index: 999;
+      min-width: 150px;
+      text-align: center;
+      cursor: pointer;;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 0;
+      display: block;
+      font-size: 18px;
+      cursor: pointer;
+      
+    }
+
+    .menu a:hover {
+      color: #f39; /* rose vif */
+      opacity: 1;
+    }
+
+    .menu.active {
+      display: flex;
+    }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #000000;
+  cursor: pointer;
+}
+.footer .social a{
+  font-size: 24px;
+  color: inherit;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+
+  margin: 0 8px;
+  opacity: 0.75;
+}
+.footer .social a:hover{
+  opacity: 0.9;
+}
+.footer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex: 1 ;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px ;
+  cursor: pointer;
+}
+
+.copi{
+  text-align: center;
+ 
+  margin: 5px;
+ 
+}
+
+
